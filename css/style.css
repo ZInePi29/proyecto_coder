@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-rows: auto 4fr 1fr auto;
+    height: 100vh;
+    grid-template-areas: "header""main""redes""footer";
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-area: header;
+    background-color: black;
+    flex-wrap: wrap;
+}
+
+main{
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    padding: 0px 1rem;
+    grid-area: main;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+footer{
+    align-items: center;
+    display: grid;
+    grid-area: footer;
+    justify-content: center;
+    place-items: center;
+    flex-wrap: wrap;
+}
+
+.redes{
+    align-items: center;
+    display: center;
+    grid-area: redes;
+    flex-wrap: wrap;
+}
+
+.logo__img{
+    height: 80px;
+    width: 160px;
+}
+
+.lista{
+    display: flex;
+    list-style: none;
+}
+
+.elemento{
+    padding: 0px 5px;
+    color: darkorange;
+    font-style: none;
+}
+
+.fp{
+    display: flex;
+    grid-template-rows: auto auto;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-areas: "Foto_portada""texto__fp";
+
+}
+
+.texto__fp{
+    align-items: flex-end;
+    grid-area: texto__fp;
+    padding-left: 300px;
+    font-family:fantasy, cursive;
+    font-size: 2rem;
+    color: darkorange;
+}
+
+.redes{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    padding: 50px;
+
+}
+
+.paquetes{
+    display: grid;
+    flex-wrap: wrap;
+}
+
+.form{
+    background: radial-gradient(blue, green);
+    flex-wrap: wrap;
+}
+
+.Foto1_GYM{
+    height: 700px;
+}
+
+.dietas{
+    display: grid;
+    flex-wrap: wrap;
+}
+
+/*Media quiries*/
+
+
+@media screen and (min-width 320px) {
+    main{
+        display: flex   ;
+        grid-template-columns: 1fr;
+        flex-wrap: wrap;
+    }
+        
+    }
+
+    
